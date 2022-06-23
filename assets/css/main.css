@@ -29,6 +29,11 @@ body {
     -ms-text-size-adjust: 100%
 }
 
+html[data-theme="dark"] html, html[data-theme="dark"] body {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.9)
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         color: rgba(255, 255, 255, 0.8);
@@ -47,6 +52,10 @@ a:focus {
     color: #f06
 }
 
+html[data-theme="dark"] html, html[data-theme="dark"] a:hover,a:focus {
+    color: #1ba77e;
+}
+
 @media (prefers-color-scheme: dark) {
 
     a:hover,
@@ -57,6 +66,10 @@ a:focus {
 
 a strong {
     color: inherit
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] a {
+    color: #1ba77e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -80,6 +93,10 @@ table {
     border-collapse: collapse
 }
 
+html[data-theme="dark"] html, html[data-theme="dark"] table {
+        border: 1px solid #555555
+}
+
 @media (prefers-color-scheme: dark) {
     table {
         border: 1px solid #555555
@@ -90,6 +107,10 @@ td,
 th {
     padding: .25rem .5rem;
     border: 1px solid #d4d4d4
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] td, th {
+    border: 1px solid #555555;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -107,6 +128,10 @@ th {
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
     background-color: #eee
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
+    background-color: #2d2d2d;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -131,6 +156,42 @@ h6 {
     position: relative
 }
 
+.category-head {
+    color: #55555c;
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] .category-head {
+    color: #d0f6db;
+}
+
+.tag-head {
+    color: #55555c;
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] .tag-head {
+    color: #d0f6db;
+}
+
+.archive-head {
+    color: #55555c;
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] .archive-head {
+    color: #d0f6db;
+}
+
+.header-head {
+    color: #55555c;
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] .header-head {
+    color: #d0f6db;
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] h1, h2, h3, h4, h5, h6 {
+    color: #d0f6db;
+}
+
 @media (prefers-color-scheme: dark) {
 
     h1,
@@ -152,6 +213,10 @@ h6::before {
     left: -1.2em;
     top: 0;
     position: absolute
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] h2::before,h4::before,h5::before,h6::before {
+    color: #d0f6db;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -212,6 +277,11 @@ hr {
     border-bottom: 1px solid #d4d4d4
 }
 
+html[data-theme="dark"] html, html[data-theme="dark"]  hr {
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+}
+
 @media (prefers-color-scheme: dark) {
     hr {
         border-top: 1px solid #333333;
@@ -227,6 +297,10 @@ abbr {
     text-transform: uppercase
 }
 
+html[data-theme="dark"] html, html[data-theme="dark"] abbr {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 @media (prefers-color-scheme: dark) {
     abbr {
         color: rgba(255, 255, 255, 0.8)
@@ -240,6 +314,10 @@ abbr[title] {
 
 span.link-arrow {
     color: #f06
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] span.link-arrow {
+    color: #1ba77e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -258,6 +336,10 @@ blockquote {
     border-left: 3px solid #d4d4d4
 }
 
+html[data-theme="dark"] html, html[data-theme="dark"] blockquote {
+    border-left: 3px solid #333333;
+}
+
 @media (prefers-color-scheme: dark) {
     blockquote {
         border-left: 3px solid #333333
@@ -266,6 +348,11 @@ blockquote {
 
 blockquote p:last-child {
     margin-bottom: 0
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
 }
 
 @media (min-width: 30em) {
@@ -283,6 +370,11 @@ mark {
     background: #cefce8;
     color: rgba(0, 0, 0, 0.8);
     padding: 2px 2px
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] mark {
+    background: #0fb47c;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -304,6 +396,12 @@ a[href^="#fn:"] {
     border: 1px solid #eee;
     border-radius: 1em;
     vertical-align: middle
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] a[href^="#fn:"] {
+    color: #1ba77e;
+    background: #2c2c2c;
+    border: 1px solid #2c2c2c;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -330,6 +428,11 @@ a[href^="#fnref:"] {
     padding: 5px;
     background: #eee;
     border: solid 1px #f06
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] .footnotes :target {
+    background: #2c2c2c;
+    border: solid 1px #1ba77e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -638,6 +741,11 @@ a[href^="#fnref:"] {
     white-space: nowrap
 }
 
+html[data-theme="dark"] html, html[data-theme="dark"] .highlighter-rouge {
+    background-color: #212c2d;
+    color: #d0f6db;
+}
+
 @media (prefers-color-scheme: dark) {
     .highlighter-rouge {
         background-color: #212c2d;
@@ -717,6 +825,10 @@ div.highlight pre {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4)
 }
 
+html[data-theme="dark"] html, html[data-theme="dark"] figure.highlight pre, div.highlight pre {
+    border: 1px solid #d0f6db;
+}
+
 @media (prefers-color-scheme: dark) {
 
     figure.highlight pre,
@@ -753,6 +865,11 @@ div.highlight pre code[data-lang]::before {
     text-align: center;
     color: #f06;
     background-color: #24252b
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] figure.highlight pre code[data-lang]::before, div.highlight pre code[data-lang]::before {
+    border: 1px solid #d0f6db;
+    color: #d0f6db;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -870,6 +987,10 @@ footer {
     padding-right: 12px
 }
 
+html[data-theme="dark"] html, html[data-theme="dark"] .masthead-title {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 @media (prefers-color-scheme: dark) {
     .masthead-title {
         color: rgba(255, 255, 255, 0.8)
@@ -891,6 +1012,10 @@ footer {
     font-size: 100%;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.8)
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] .navigation {
+    color: rgba(255, 255, 255, 0.8);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -994,6 +1119,10 @@ figure.attributed-quote figcaption::first-letter {
     color: rgba(0, 0, 0, 0.8)
 }
 
+html[data-theme="dark"] html, html[data-theme="dark"] .page-title, .post-title, .post-title a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 @media (prefers-color-scheme: dark) {
 
     .page-title,
@@ -1015,6 +1144,10 @@ figure.attributed-quote figcaption::first-letter {
     color: rgba(0, 0, 0, 0.8)
 }
 
+html[data-theme="dark"] html, html[data-theme="dark"] .post-date {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 @media (prefers-color-scheme: dark) {
     .post-date {
         color: rgba(255, 255, 255, 0.8)
@@ -1027,6 +1160,10 @@ figure.attributed-quote figcaption::first-letter {
     margin-top: -.9rem;
     margin-bottom: 1.5rem;
     color: rgba(0, 0, 0, 0.8)
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] .permalink {
+    color: rgba(255, 255, 255, 0.8);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1044,6 +1181,10 @@ figure.attributed-quote figcaption::first-letter {
     color: rgba(0, 0, 0, 0.8)
 }
 
+html[data-theme="dark"] html, html[data-theme="dark"] .external-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 @media (prefers-color-scheme: dark) {
     .external-link {
         color: rgba(255, 255, 255, 0.8)
@@ -1058,6 +1199,10 @@ figure.attributed-quote figcaption::first-letter {
     color: rgba(0, 0, 0, 0.8)
 }
 
+html[data-theme="dark"] html, html[data-theme="dark"] .tag-list {
+    color: #d0f6db;
+}
+
 @media (prefers-color-scheme: dark) {
     .tag-list {
         color: #d0f6db
@@ -1070,6 +1215,11 @@ figure.attributed-quote figcaption::first-letter {
     margin-bottom: 2rem;
     border-top: 1px solid #d4d4d4;
     border-bottom: 1px solid #d4d4d4
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] .related {
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1118,6 +1268,10 @@ figure.attributed-quote figcaption::first-letter {
     text-decoration: none
 }
 
+html[data-theme="dark"] html, html[data-theme="dark"] .related-posts li a:hover {
+    color: #1ba77e;
+}
+
 @media (prefers-color-scheme: dark) {
     .related-posts li a:hover {
         color: #1ba77e
@@ -1142,6 +1296,10 @@ figure.attributed-quote figcaption::first-letter {
     border-width: 1px 0
 }
 
+html[data-theme="dark"] html, html[data-theme="dark"] .pagination-item {
+    border: solid #111111;
+}
+
 @media (prefers-color-scheme: dark) {
     .pagination-item {
         border: solid #111111
@@ -1154,6 +1312,10 @@ figure.attributed-quote figcaption::first-letter {
 
 a.pagination-item:hover {
     background-color: #eee
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] a.pagination-item:hover {
+    background-color: #1e1e1e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1192,6 +1354,12 @@ a.pagination-item:hover {
     color: #fff;
     background-color: #454545;
     border-left: .3rem solid #bebebe
+}
+
+html[data-theme="dark"] html, html[data-theme="dark"] .message {
+    color: #fff;
+    background-color: #282828;
+    border-left: .3rem solid #595959;
 }
 
 @media (prefers-color-scheme: dark) {

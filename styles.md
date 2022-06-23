@@ -7,7 +7,7 @@ title: Styles
   <small>This page serves to document the style of various elements used in the site's design.</small>
 </p>
 
-## <small>THIS IS A HEADER</small>
+<h2 class="header-head"> <small>THIS IS A HEADER</small> </h2>
 
 This is the font, size, color and spacing of regular ol' paragraph <p> text. Using Markdown makes it dead simple
 to make text *italic*, **bold** or ***bold and italic***.

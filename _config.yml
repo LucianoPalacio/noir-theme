@@ -25,6 +25,8 @@ exclude:
 
 # Options
 
+theme_apparence: "dark" #Can be dark or ligth
+
 # Specify the author for blog posts
 author:
   name: Your Name
