@@ -1,0 +1,32 @@
+# Setup
+title: Noir
+tagline: a dark mode friendly Jekyll theme
+url: 
+paginate: 1
+baseurl: ""
+permalink: :title/
+
+kramdown:
+    footnote_backlink: "&#10548;"
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+# Options
+
+# Specify the author for blog posts
+author:
+  name: Your Name
+  url: #Your website or social media
+  email: #Your email
